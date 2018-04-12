@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>小地方</title>
+	<meta name="description" content="一个从事web前端开发工程师的个人网站">
+	<meta name="keywords" content="laike的个人博客，一个从事web前端开发工程师的个人博客">
+	<meta name="author" content="laike">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css"  href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+
+	<!-- Slider
+	================================================== -->
+	<link href="../css/owl.carousel.css" rel="stylesheet" media="screen">
+	<link href="../css/owl.theme.css" rel="stylesheet" media="screen">
+
+	<!-- Stylesheet
+	================================================== -->
+	<link rel="stylesheet" type="text/css"  href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
+	<link rel="shortcut icon" href="../css/grabbing.png">
+
+	<script type="text/javascript" src="../js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="../js/artTamplate.js"></script>
+</head>
+<body>
+<div id="header"></div>
+
+
+<div id="tf-home" class="text-center">
+		<div class="content">
+		</div>
+</div>
+
+
+<div id="tf-books">
+	<div class="container"> <!-- Container -->
+		
+		<div class="space"></div>
+		<div class="categories">	
+			<ul class="cat">
+				<li class="pull-left"><h4>books</h4></li>
+				<li class="pull-right">
+					<ol class="type">
+						<li><a href="#" data-filter="*" class="active">All</a></li>
+						<li><a href="#" data-filter=".web">Web</a></li>
+						<li><a href="#" data-filter=".photography">frame</a></li>
+						<li><a href="#" data-filter=".app" >API</a></li>
+						<li><a href="#" data-filter=".branding" >Plug</a></li>
+						<li><a href="#" id="booksAdd">Add</a></li>
+
+					</ol>
+				</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+
+		<div id="lightbox" class="row">
+
+		</div>
+
+	</div>
+</div>
+
+
+
+<div class="container" id="neirong" style="min-height:400px"></div>
+<div class="container" id="addbook" style="display:none">
+	<p class="col-md-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1"><button class="col-md-2 col-sm-2 col-lg-1 pull-right" id="booksAddBtn">关闭</button></p>
+	<p><input type="text" class="col-md-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1" placeholder="请输入id(英文)" id="booksAddClose"></p>
+	<p class="col-md-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1" ></p>
+	<p><input type="text" class="col-md-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1" placeholder="请输入标题" id="booksAddTitle"></p>
+	<p class="col-md-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1" ></p>
+	<p><input type="text" class="col-md-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1" placeholder="请输入标签，如‘web’" id="booksAddBiaoQian"></p>
+	<p class="col-md-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1" ></p>
+
+<textarea class="col-md-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1" rows="20" cols="30" id="booksAddHtml"></textarea>
+	<p class="col-md-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1" ></p>
+	<p class="col-md-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1 text-center"><button class="col-md-2 col-sm-2 col-lg-1 pull-right" id="booksAddBtn">提交</button></p>
+	<p class="col-md-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1 col-lg-offset-1" ></p>
+</div>
+
+
+
+<nav id="footer"></nav>
+	<script type="text/html" id="booksTemplet">
+			{{each list as prod}}
+			<div class="col-sm-6 col-md-3 col-lg-3 {{prod.app}}">
+				<div class="portfolio-item text-center" data-id={{prod.id}}>
+					<a href="#">{{prod.title}}</a>
+				</div>
+			</div>
+			{{/each}}
+	</script>	
+
+
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/SmoothScroll.js"></script>
+<script type="text/javascript" src="../js/jquery.isotope.js"></script>
+<script src="../js/owl.carousel.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/base.js"></script>
+<script type="text/javascript" src="../js/books.js"></script>
+</body>
+</html>
